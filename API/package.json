@@ -1,0 +1,18 @@
+{
+  "name": "fullstack-api",
+  "version": "1.0.0",
+  "description": "Backend en express y mongo",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js"
+  },
+  "author": "Danilo Diez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.10"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
