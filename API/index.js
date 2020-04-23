@@ -3,9 +3,17 @@
 const express = require('express')
 const app = express()
 const port = 4000
+
+
 const routes = require('./routes')
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser');
+const cors = require('cors');
+
+//Habilitar CORS
+app.use(cors());
+
+//Habilitar BD
 
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/veterinaria',{
